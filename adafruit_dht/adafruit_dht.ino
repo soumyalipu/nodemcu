@@ -5,12 +5,12 @@
 #define DHTTYPE DHT11
 DHT dht(DHTPIN,DHTTYPE);
 ///for wifi credentials
-#define WIFI_SSID "rout-2g"
-#define WIFI_PASS "Rout@1234"
+#define WIFI_SSID ""
+#define WIFI_PASS ""
 
 //adafruit login credentials
-#define IO_USERNAME  "soumya1234"
-#define IO_KEY       "f59655943a284c748e2d6b9576cf691e"
+#define IO_USERNAME  ""
+#define IO_KEY       ""
 
 AdafruitIO_WiFi io(IO_USERNAME,IO_KEY,WIFI_SSID,WIFI_PASS);
 AdafruitIO_Feed *tempData =io.feed("temp nodemcu");
