@@ -2,8 +2,8 @@
 #include <Firebase_ESP_Client.h>
 #include "addons/TokenHelper.h"
 #include "addons/RTDBHelper.h"
-#define API_KEY "AIzaSyBiRAwqTyqm5v_jGo9pBgCDHF88qIPwJB0"
-#define DATABASE_URL "http://testnodemcu-c4086-default-rtdb.firebaseio.com/"
+#define API_KEY ""
+#define DATABASE_URL "/"
 //Define Firebase Data object
 FirebaseData fbdo;
 #include<DHT.h>
@@ -19,7 +19,7 @@ void setup() {
   WiFi.disconnect();
   delay(2000);
   Serial.print("Start connection");
-  WiFi.begin("rout-2g","Rout@1234");
+  WiFi.begin("","");
   while((!(WiFi.status()== WL_CONNECTED))){
       delay(200);
       Serial.print("..");
