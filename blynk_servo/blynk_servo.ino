@@ -1,13 +1,13 @@
 #define BLYNK_PRINT Serial
-#define BLYNK_TEMPLATE_ID "TMPL7m7Cn-M3"
-#define BLYNK_DEVICE_NAME "testCopy"
-#define BLYNK_AUTH_TOKEN "MSk22hO6o90iFmmOvjsvRq63I3zW_9EY"
+#define BLYNK_TEMPLATE_ID ""
+#define BLYNK_DEVICE_NAME ""
+#define BLYNK_AUTH_TOKEN ""
 
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
 char auth[] = BLYNK_AUTH_TOKEN;
-char ssid[] = "rout-2g";
-char pass[] = "Rout@1234";
+char ssid[] = "";
+char pass[] = "";
 
 #include <Servo.h>
 
