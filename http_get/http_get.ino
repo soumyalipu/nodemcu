@@ -6,7 +6,7 @@
 #define DHTTYPE DHT11
 DHT dht(DHTPIN,DHTTYPE);
 #include <ArduinoJson.h>
-String URL="http://api.thingspeak.com/channels/1873271/fields/6.json?api_key=2JRIHZLS3N9Q34D4&results=1";
+String URL="http://api.thingspeak.com/channels/";
 
 void setup() {
   // put your setup code here, to run once:
@@ -14,7 +14,7 @@ void setup() {
   WiFi.disconnect();
   delay(2000);
   Serial.print("Start connection");
-  WiFi.begin("rout-2g","Rout@1234");
+  WiFi.begin("","");
   while((!(WiFi.status()== WL_CONNECTED))){
       delay(200);
       Serial.print("..");
